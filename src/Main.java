@@ -43,8 +43,8 @@ public class Main {
                 System.out.println(operacoes);
                 valor = entrada.nextInt();
 
-                if (valor <= 0 || valor > 8) {
-                    System.out.println("Opção inválida!");
+                if (valor == 8) {
+                    System.out.println("Sistema finalizado!");
                     break;
                 }
 
@@ -78,7 +78,7 @@ public class Main {
                         conversao.setTargetCode("COP");
                         break;
                     default:
-                        menu = false;
+                        System.out.println("Opção Inválida");
                         break;
                 }
 
